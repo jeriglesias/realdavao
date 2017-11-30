@@ -1,0 +1,29 @@
+Mongodb = https://www.youtube.com/watch?v=pWbMrx5rVBE
+Express = https://www.youtube.com/watch?v=gnsO8-xJ8rs&t=375s
+Angular = https://coursetro.com/courses/19/Learn-Angular-5-from-Scratch---Angular-5-Tutorial/lessons/1#
+Nodejs = https://www.youtube.com/watch?v=U8XF6AFGqlc
+Restful api = https://www.youtube.com/watch?v=eB9Fq9I5ocs&t=9s
+MEAN stack = https://www.youtube.com/watch?v=uONz0lEWft0&list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ
+
+
+Mongo set up 
+
+1. Install
+2. Custom D:\mongodb\
+3. Created Config File mongod.cfg
+
+===== config file content ====
+
+systemLog:
+    destination: file
+    path: D:\mongodb\log\mongod.log
+storage:
+    dbPath: D:\mongodb\data\db
+
+===============================
+
+4. Create MongoDB Service
+
+sc.exe create MongoDB binPath= "\"D:\mongodb\bin\mongod.exe\" --service --config=\"D:\mongodb\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+
+5. start service: net start MongoDB
